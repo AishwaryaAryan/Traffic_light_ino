@@ -1,0 +1,29 @@
+#define RED_LED D1     // Red LED connected to GPIO5
+#define YELLOW_LED D2  // Yellow LED connected to GPIO4
+#define GREEN_LED D3   // Green LED connected to GPIO0
+
+void setup() {
+    pinMode(RED_LED, OUTPUT);
+    pinMode(YELLOW_LED, OUTPUT);
+    pinMode(GREEN_LED, OUTPUT);
+}
+
+void loop() {
+    // Red Light
+    digitalWrite(RED_LED, HIGH);
+    digitalWrite(YELLOW_LED, LOW);
+    digitalWrite(GREEN_LED, LOW);
+    delay(5000);  // Red light for 5 seconds
+
+    // Yellow Light
+    digitalWrite(RED_LED, LOW);
+    digitalWrite(YELLOW_LED, HIGH);
+    digitalWrite(GREEN_LED, LOW);
+    delay(2000);  // Yellow light for 2 seconds
+
+    // Green Light
+    digitalWrite(RED_LED, LOW);
+    digitalWrite(YELLOW_LED, LOW);
+    digitalWrite(GREEN_LED, HIGH);
+    delay(5000);  // Green light for 5 seconds
+}
