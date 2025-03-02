@@ -1,0 +1,35 @@
+1. Traffic Light System (README.md)
+
+# ESP8266 Traffic Light System 🚦
+
+## Overview  
+This project simulates a *traffic light system* using an ESP8266 and three LEDs (Red, Yellow, and Green). The LEDs follow a typical traffic light sequence with adjustable delays.
+
+## Features  
+✅ Red, Yellow, and Green LED control  
+✅ Simulates real-world traffic light behavior  
+✅ Simple and easy to implement  
+
+## Hardware Requirements  
+- *ESP8266* (NodeMCU, Wemos D1 Mini, etc.)  
+- *LEDs* (Red, Yellow, Green)  
+- *Resistors* (220Ω recommended)  
+- *Breadboard & jumper wires*  
+
+## Circuit Connections  
+| LED | ESP8266 Pin |
+|------|------------|
+| Red  | D1 (GPIO5) |
+| Yellow | D2 (GPIO4) |
+| Green  | D3 (GPIO0) |
+
+## Installation & Usage  
+1. Connect the LEDs as per the circuit diagram.  
+2. Upload traffic_light.ino to the ESP8266 using Arduino IDE.  
+3. Observe the LED sequence simulating a real traffic light.  
+
+## Code Explanation  
+- The *Red LED* turns on for 5 seconds.  
+- The *Yellow LED* turns on for 2 seconds.  
+- The *Green LED* turns on for 5 seconds.  
+- The cycle repeats continuously.  
